@@ -27,10 +27,11 @@ def caesar_decrypt(cipher_text):
     return(plain_text)
 
 
+if __name__ == "__main__":
+        
+    m = """Learning a little each day adds up Research shows that students who make learning a habit are more likely to reach their goals Set time aside to learn and get reminders using your learning scheduler"""
+    encrypted = caesar_encrypt(m)
+    print(encrypted)
+    decrypted = caesar_decrypt(encrypted)
 
-m = "Welcome to my Udemy course"
-encrypted = caesar_encrypt(m)
-print(encrypted)
-decrypted = caesar_decrypt(encrypted)
-
-print(decrypted)
+    print(decrypted)

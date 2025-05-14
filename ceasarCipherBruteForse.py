@@ -16,10 +16,12 @@ def crack_caesar(cipher_text):
         #print the actual decrypted string with the given key
         print(f"With key {key}, the result is {plain_text}")
 
-encrypted = "ZHOFRPHCWRCPACXGHPACFRXUVH"
+
+if __name__ == "__main__":
+    encrypted = "ZHOFRPHCWRCPACXGHPACFRXUVH"
 
 
-crack_caesar(encrypted)
+    crack_caesar(encrypted)
 
 
 
