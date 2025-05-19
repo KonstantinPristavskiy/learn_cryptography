@@ -12,11 +12,15 @@ def count_english_words(text: str, english_words_list: list) -> int:
     return matches
 
 
-if __name__ == "__main__":
+def is_text_english(text: str) -> bool:
     english_words_list = get_english_words(ENGLISH_WORDS_PATH)
-    print(len(english_words_list))
-
-    text = "My name is Kostiantyn"
     english_words_amount = count_english_words(text, english_words_list)
-    print(english_words_amount)
+    return True if english_words_amount / len(text.split(' ')) >= 0.8 else False
     
+    
+
+if __name__ == "__main__":
+    
+    text = "My name is mister black"
+    is_text_english_result = is_text_english(text)
+    print(is_text_english_result)
